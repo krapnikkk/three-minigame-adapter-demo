@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<packageDescription id="58oxr1hs" jpegQuality="80" compressPNG="true">
+<packageDescription id="58oxr1hs">
   <resources>
     <component id="rftu0" name="Main.xml" path="/" exported="true"/>
     <image id="rftu1" name="CloseSelected.png" path="/"/>
@@ -9,6 +9,11 @@
     <image id="rftu5" name="b7_png.png" path="/" scale="9grid" scale9grid="8,7,66,14"/>
     <image id="rftu6" name="b5_png.png" path="/" scale="9grid" scale9grid="12,7,61,14"/>
     <image id="rftu7" name="b6_png.png" path="/" scale="9grid" scale9grid="9,5,66,16"/>
+    <component id="jluc8" name="Button6.xml" path="/components/"/>
+    <image id="jluc9" name="k5.png" path="/images/"/>
+    <image id="jluca" name="k3.png" path="/images/" scale="9grid" scale9grid="16,9,32,6"/>
+    <image id="jlucb" name="k6.png" path="/images/" scale="9grid" scale9grid="16,11,32,7"/>
+    <image id="jlucc" name="k4.png" path="/images/"/>
   </resources>
   <publish name="MainMenu"/>
 </packageDescription>

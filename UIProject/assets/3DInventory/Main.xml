@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<component size="960,680" pivot="0.5,0.5" anchor="true" overflow="hidden" designImageOffsetX="-173" designImageOffsetY="-112" designImageAlpha="97" bgColorEnabled="true" bgColor="#333333">
+<component size="960,680" pivot="0.5,0.5" overflow="hidden" designImageOffsetX="-173" designImageOffsetY="-112" designImageAlpha="97" bgColorEnabled="true" bgColor="#333333">
   <controller name="weapons" pages="0,,1,,2,,3,,4,,5,,6,,7,,8,,9,,10,,11,,12,,13,,14,,15,,16,,17,,18,,19," selected="0"/>
   <controller name="tab" pages="0,,1,,2," selected="0"/>
   <displayList>
