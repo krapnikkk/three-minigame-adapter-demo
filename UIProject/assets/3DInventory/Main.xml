@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="960,680" pivot="0.5,0.5" anchor="true" overflow="hidden" designImageOffsetX="-173" designImageOffsetY="-112" designImageAlpha="97" bgColorEnabled="true" bgColor="#333333">
+  <controller name="weapons" pages="0,,1,,2,,3,,4,,5,,6,,7,,8,,9,,10,,11,,12,,13,,14,,15,,16,,17,,18,,19," selected="0"/>
+  <controller name="tab" pages="0,,1,,2," selected="0"/>
+  <displayList>
+    <component id="n67" name="n67" src="i8bp1h" fileName="bg/bg.xml" xy="0,0" alpha="0.85"/>
+    <component id="n74" name="n74" src="9ejs1u" fileName="others/Component1.xml" xy="35,80" size="859,201"/>
+    <component id="n73" name="n73" src="9ejs1t" fileName="left/left.xml" xy="-6,-4" size="47,686"/>
+    <component id="n53" name="equipped" src="i8bp13" fileName="item/equipped.xml" xy="661,81"/>
+    <component id="n75" name="n75" src="gqel1v" fileName="titlebar/titlebar.xml" xy="20,-5" size="911,54"/>
+    <component id="n11" name="n11" src="gqel1w" fileName="tab/tab.xml" xy="884,41">
+      <Button checked="true" controller="tab" page="0"/>
+    </component>
+    <component id="n12" name="n12" src="gqel1w" fileName="tab/tab.xml" xy="884,274">
+      <Button icon="ui://572fdiqli8bpi" controller="tab" page="1"/>
+    </component>
+    <component id="n13" name="n13" src="gqel1w" fileName="tab/tab.xml" xy="884,506" size="46,171">
+      <Button icon="ui://572fdiqli8bph" controller="tab" page="2"/>
+    </component>
+    <component id="n17" name="n17" src="i8bp10" fileName="heading/heading.xml" xy="34,43" size="632,46"/>
+    <component id="n18" name="n18" src="i8bp10" fileName="heading/heading.xml" xy="659,42" size="230,46">
+      <Label title="EQUIPPED"/>
+    </component>
+    <component id="n19" name="n19" src="i8bp10" fileName="heading/heading.xml" xy="36,275" size="632,46">
+      <Label title="ITEMS"/>
+    </component>
+    <component id="n20" name="n20" src="i8bp10" fileName="heading/heading.xml" xy="660,274" size="230,46">
+      <Label title="PROFILE"/>
+    </component>
+    <image id="n21" name="n21" src="i8bpz" fileName="heading/heading_g.png" xy="38,506" size="51,46" blend="add"/>
+    <image id="n22" name="n22" src="i8bpz" fileName="heading/heading_g.png" xy="846,506" size="43,46" blend="add" flip="hz"/>
+    <image id="n23" name="n23" src="i8bpz" fileName="heading/heading_g.png" xy="36,634" size="51,46" blend="add" flip="vt"/>
+    <image id="n24" name="n24" src="i8bpz" fileName="heading/heading_g.png" xy="847,635" size="43,46" blend="add" flip="both"/>
+    <component id="n26" name="w0" src="i8bp12" fileName="item/inventory_item.xml" xy="55,90" group="n40">
+      <Button checked="true" title="01" icon="ui://572fdiqli8bpt" controller="weapons" page="0"/>
+    </component>
+    <component id="n29" name="w1" src="i8bp12" fileName="item/inventory_item.xml" xy="175,90" group="n40">
+      <Button title="02" icon="ui://572fdiqli8bps" controller="weapons" page="1"/>
+    </component>
+    <component id="n30" name="w2" src="i8bp12" fileName="item/inventory_item.xml" xy="295,90" group="n40">
+      <Button title="03" icon="ui://572fdiqli8bpr" controller="weapons" page="2"/>
+    </component>
+    <component id="n31" name="w3" src="i8bp12" fileName="item/inventory_item.xml" xy="415,90" group="n40">
+      <Button title="04" icon="ui://572fdiqli8bpq" controller="weapons" page="3"/>
+    </component>
+    <component id="n32" name="w4" src="i8bp12" fileName="item/inventory_item.xml" xy="535,90" group="n40">
+      <Button title="05" icon="ui://572fdiqli8bpp" controller="weapons" page="4"/>
+    </component>
+    <component id="n33" name="w5" src="i8bp12" fileName="item/inventory_item.xml" xy="55,178" group="n40">
+      <Button title="06" icon="ui://572fdiqli8bpo" controller="weapons" page="5"/>
+    </component>
+    <component id="n34" name="w6" src="i8bp12" fileName="item/inventory_item.xml" xy="175,178" group="n40">
+      <Button title="07" icon="ui://572fdiqli8bpn" controller="weapons" page="6"/>
+    </component>
+    <component id="n35" name="w7" src="i8bp12" fileName="item/inventory_item.xml" xy="295,178" group="n40">
+      <Button title="08" icon="ui://572fdiqli8bpm" controller="weapons" page="7"/>
+    </component>
+    <component id="n36" name="w8" src="i8bp12" fileName="item/inventory_item.xml" xy="415,178" group="n40" touchable="false" grayed="true">
+      <Button title="09" icon="ui://572fdiqli8bpl" controller="weapons" page="8"/>
+    </component>
+    <component id="n37" name="w9" src="i8bp12" fileName="item/inventory_item.xml" xy="535,178" group="n40" touchable="false" grayed="true">
+      <Button title="00" icon="ui://572fdiqli8bpk" controller="weapons" page="9"/>
+    </component>
+    <group id="n40" name="n40" xy="55,90" size="594,181" advanced="true"/>
+    <component id="n41" name="m0" src="i8bp12" fileName="item/inventory_item.xml" xy="55,322" group="n51">
+      <Button icon="ui://572fdiqli8bpt" controller="weapons" page="10"/>
+    </component>
+    <component id="n42" name="m1" src="i8bp12" fileName="item/inventory_item.xml" xy="175,322" group="n51">
+      <Button icon="ui://572fdiqli8bps" controller="weapons" page="11"/>
+    </component>
+    <component id="n43" name="m2" src="i8bp12" fileName="item/inventory_item.xml" xy="295,322" group="n51">
+      <Button icon="ui://572fdiqli8bpr" controller="weapons" page="12"/>
+    </component>
+    <component id="n44" name="m3" src="i8bp12" fileName="item/inventory_item.xml" xy="415,322" group="n51">
+      <Button controller="weapons" page="13"/>
+    </component>
+    <component id="n45" name="m4" src="i8bp12" fileName="item/inventory_item.xml" xy="535,322" group="n51">
+      <Button controller="weapons" page="14"/>
+    </component>
+    <component id="n46" name="m5" src="i8bp12" fileName="item/inventory_item.xml" xy="55,411" group="n51">
+      <Button controller="weapons" page="15"/>
+    </component>
+    <component id="n47" name="m6" src="i8bp12" fileName="item/inventory_item.xml" xy="175,411" group="n51">
+      <Button controller="weapons" page="16"/>
+    </component>
+    <component id="n48" name="m7" src="i8bp12" fileName="item/inventory_item.xml" xy="295,411" group="n51">
+      <Button controller="weapons" page="17"/>
+    </component>
+    <component id="n49" name="m8" src="i8bp12" fileName="item/inventory_item.xml" xy="415,411" group="n51">
+      <Button controller="weapons" page="18"/>
+    </component>
+    <component id="n50" name="m9" src="i8bp12" fileName="item/inventory_item.xml" xy="535,411" group="n51">
+      <Button controller="weapons" page="19"/>
+    </component>
+    <group id="n51" name="n51" xy="55,322" size="594,182" advanced="true"/>
+    <image id="n59" name="n59" src="i8bp16" fileName="titlebar/info_arrow_g.png" xy="188,520" group="n76"/>
+    <image id="n66" name="n66" src="i8bp1a" fileName="others/info_cpc_g.png" xy="62,628" group="n76"/>
+    <loader id="n56" name="info_icon" xy="51,523" size="135,100" group="n76" url="ui://572fdiqli8bpq" fill="scale"/>
+    <component id="n64" name="n64" src="i8bp19" fileName="others/action_button.xml" xy="617,633" group="n76"/>
+    <component id="n65" name="n65" src="i8bp19" fileName="others/action_button.xml" xy="753,633" group="n76">
+      <Button title="CANCEL" icon="ui://572fdiqli8bp17"/>
+    </component>
+    <text id="n57" name="info_msg" xy="191,552" size="685,77" group="n76" fontSize="18" color="#bfa38f" autoSize="none" text="The fairly fast-firing primary fire beam, projectile-based alternate and explosive combo attack make it a good choice for combat at just about any range."/>
+    <text id="n58" name="info_title" xy="206,522" size="221,26" group="n76" fontSize="18" color="#bfa38f" autoSize="height" text="SHOCK RIFLE"/>
+    <group id="n76" name="n76" xy="51,520" size="825,149" advanced="true"/>
+  </displayList>
+  <transition name="show" autoPlay="true">
+    <item time="0" type="Alpha" target="n51" value="0"/>
+    <item time="0" type="Alpha" target="n40" value="0"/>
+    <item time="0" type="Alpha" target="n53" value="0"/>
+    <item time="0" type="Alpha" target="n76" value="0"/>
+    <item time="0" type="Size" target="n75" value="0,-"/>
+    <item time="0" type="Size" target="n20" value="0,-"/>
+    <item time="0" type="Size" target="n18" value="0,-"/>
+    <item time="0" type="Size" target="n74" value="0,-"/>
+    <item time="0" type="Size" target="n19" value="0,-"/>
+    <item time="0" type="Size" target="n17" value="0,-"/>
+    <item time="0" type="Transition" target="n67" value="show"/>
+    <item time="0" type="XY" target="n20" value="660,274"/>
+    <item time="0" type="XY" target="n17" value="665,-"/>
+    <item time="0" type="XY" target="n12" value="-69,-"/>
+    <item time="0" type="XY" target="n21" value="-193,-"/>
+    <item time="0" type="XY" target="n22" value="977,-"/>
+    <item time="0" type="XY" target="n18" value="659,42"/>
+    <item time="0" type="XY" target="n73" value="-113,-"/>
+    <item time="0" type="XY" target="n13" value="-63,-"/>
+    <item time="0" type="XY" target="n23" value="-188,-"/>
+    <item time="0" type="XY" target="n11" value="-67,-"/>
+    <item time="0" type="XY" target="n24" value="984,-"/>
+    <item time="0" type="XY" target="n19" value="36,275"/>
+    <item time="27" type="Size" target="n20" tween="true" startValue="1,-" endValue="230,46" duration="24" ease="Linear"/>
+    <item time="27" type="Size" target="n17" tween="true" startValue="0,-" endValue="632,46" duration="24" ease="Linear"/>
+    <item time="27" type="Size" target="n18" tween="true" startValue="0,-" endValue="230,46" duration="24" ease="Linear"/>
+    <item time="27" type="Size" target="n19" tween="true" startValue="0,-" endValue="632,46" duration="24" ease="Linear"/>
+    <item time="27" type="Transition" target="n75" value="show"/>
+    <item time="27" type="Transition" target="n73" value="show"/>
+    <item time="27" type="XY" target="n11" tween="true" startValue="0,-" endValue="884,-" duration="18" ease="Linear"/>
+    <item time="27" type="XY" target="n73" value="-6,-"/>
+    <item time="27" type="XY" target="n19" tween="true" startValue="668,275" endValue="36,275" duration="24" ease="Linear"/>
+    <item time="27" type="XY" target="n18" tween="true" startValue="892,-" endValue="659,-" duration="24" ease="Linear"/>
+    <item time="27" type="XY" target="n17" tween="true" startValue="664,-" endValue="34,43" duration="24" ease="Linear"/>
+    <item time="27" type="XY" target="n20" tween="true" startValue="894,-" endValue="660,274" duration="24" ease="Linear"/>
+    <item time="28" type="Size" target="n74" value="0,-"/>
+    <item time="43" type="Alpha" target="n76" tween="true" startValue="0" endValue="1" duration="8" ease="Linear"/>
+    <item time="43" type="XY" target="n12" tween="true" startValue="-68,-" endValue="884,-" duration="15" ease="Linear"/>
+    <item time="43" type="XY" target="n13" tween="true" startValue="-66,-" endValue="884,-" duration="15" ease="Linear"/>
+    <item time="45" type="Size" target="n74" value="859,-"/>
+    <item time="51" type="Alpha" target="n51" tween="true" startValue="0" endValue="1" duration="8" ease="Linear"/>
+    <item time="51" type="Alpha" target="n53" tween="true" startValue="0" endValue="1" duration="8" ease="Linear"/>
+    <item time="51" type="Alpha" target="n40" tween="true" startValue="0" endValue="1" duration="8" ease="Linear"/>
+    <item time="51" type="XY" target="n22" tween="true" startValue="455,-" endValue="846,506" duration="8" ease="Linear"/>
+    <item time="51" type="XY" target="n21" tween="true" startValue="405.5,-" endValue="38,506" duration="8" ease="Linear"/>
+    <item time="51" type="XY" target="n23" tween="true" startValue="407,-" endValue="36,634" duration="8" ease="Linear"/>
+    <item time="51" type="XY" target="n24" tween="true" startValue="455,-" endValue="847,635" duration="8" ease="Linear"/>
+  </transition>
+  <transition name="arrow_blink" autoPlay="true" autoPlayRepeat="-1" autoPlayDelay="2.5">
+    <item time="0" type="Alpha" target="n59" tween="true" startValue="1" endValue="0.5" duration="7" ease="Linear"/>
+    <item time="7" type="Alpha" target="n59" tween="true" startValue="0.5" endValue="1" duration="8" ease="Linear"/>
+  </transition>
+</component>

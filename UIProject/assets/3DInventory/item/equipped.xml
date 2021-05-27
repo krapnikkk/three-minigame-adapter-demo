@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="218,199" extention="Label">
+  <displayList>
+    <image id="n14" name="n14" src="i8bpy" xy="2,1" pivot="0.5,0.5" size="216,198"/>
+    <loader id="n52" name="icon" xy="0,0" pivot="0.5,0.5" size="217,194" url="ui://572fdiqli8bpq" align="center" vAlign="middle" fill="scale"/>
+  </displayList>
+  <transition name="change">
+    <item time="0" type="ColorFilter" target="n52" value="1.00,0.00,0.00,0.00"/>
+    <item time="0" type="Size" target="n52" tween="true" startValue="264,248" endValue="217,194" duration="4" ease="Linear"/>
+    <item time="0" type="Size" target="n14" tween="true" startValue="301,290" endValue="216,198" duration="4" ease="Linear"/>
+    <item time="4" type="ColorFilter" target="n52" value="0.00,0.00,0.00,0.00"/>
+  </transition>
+</component>

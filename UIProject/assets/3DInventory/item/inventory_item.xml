@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="114,93" extention="Button" bgColorEnabled="true" bgColor="#000000">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0">
+    <action type="play_transition" fromPage="" toPage="0" transition="up" stopOnExit="true"/>
+    <action type="play_transition" fromPage="" toPage="1,3" transition="down" stopOnExit="true"/>
+    <action type="play_transition" fromPage="" toPage="2" transition="over" stopOnExit="true"/>
+  </controller>
+  <controller name="grayed" pages="0,,1," selected="0"/>
+  <displayList>
+    <image id="n27" name="bg_red" src="i8bpv" fileName="item/inventory_item3.png" xy="-3,0" blend="add">
+      <gearDisplay controller="button" pages="1,2,3"/>
+    </image>
+    <image id="n25" name="bg" src="i8bpx" fileName="item/inventory_item1.png" xy="-5,-2" blend="add"/>
+    <image id="n29" name="border" src="i8bpw" fileName="item/inventory_item2.png" xy="-6,-3" pivot="0.5,0.5" size="120,96" blend="add"/>
+    <loader id="n26" name="icon" xy="0,0" size="114,93" url="ui://572fdiqli8bpt" align="center" vAlign="middle">
+      <gearLook controller="grayed" pages="1" values="0.16,0,0,1" default="1,0,0,1"/>
+      <gearColor controller="grayed" pages="0,1" values="#ffffff|#000000"/>
+    </loader>
+    <text id="n28" name="title" xy="80,13" size="23,22" fontSize="16" color="#bfa38f" autoSize="none" singleLine="true" text=""/>
+  </displayList>
+  <Button mode="Radio"/>
+  <transition name="over">
+    <item time="0" type="Alpha" target="n27" tween="true" startValue="0.5" endValue="1" duration="12" ease="Linear" repeat="-1" yoyo="true"/>
+    <item time="0" type="Scale" target="n29" tween="true" startValue="1.3,1.3" endValue="1,1" duration="9"/>
+  </transition>
+  <transition name="down">
+    <item time="0" type="Alpha" target="n27" tween="true" startValue="0.5" endValue="1" duration="12" ease="Linear" repeat="-1" yoyo="true"/>
+    <item time="0" type="Scale" target="n29" tween="true" startValue="1.3,1.3" endValue="1,1" duration="9"/>
+    <item time="0" type="XY" target="n26" tween="true" startValue="0,-" endValue="-18,-" duration="17" ease="Linear" repeat="-1" yoyo="true"/>
+    <item time="9" type="ColorFilter" target="n29" value="1.00,0.00,0.00,0.00"/>
+    <item time="10" type="ColorFilter" target="n29" value="0.00,0.00,0.00,0.00"/>
+    <item time="11" type="ColorFilter" target="n29" value="1.00,0.00,0.00,0.00"/>
+    <item time="12" type="ColorFilter" target="n29" value="0.00,0.00,0.00,0.00"/>
+    <item time="13" type="ColorFilter" target="n29" value="1.00,0.00,0.00,0.00"/>
+  </transition>
+  <transition name="up">
+    <item time="0" type="ColorFilter" target="n29" value="0.00,0.00,0.00,0.00"/>
+  </transition>
+</component>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="26,26" extention="Button">
+  <controller name="c1" pages="0,,1," selected="0"/>
+  <displayList>
+    <image id="n4" name="n4" src="i8bp6" xy="-5,-5"/>
+    <image id="n5" name="n5" src="i8bp5" xy="-5,-5">
+      <gearDisplay controller="c1" pages="1"/>
+    </image>
+    <text id="n6" name="title" xy="3,3" size="19,17" fontSize="10" color="#402d20" autoSize="none" singleLine="true" text="CD"/>
+  </displayList>
+  <Button/>
+</component>

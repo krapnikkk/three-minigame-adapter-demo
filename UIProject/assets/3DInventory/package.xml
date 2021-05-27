@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="572fdiql">
+  <resources>
+    <component id="mpis0" name="Main.xml" path="/" exported="true"/>
+    <image id="i8bp3" name="titlebar1_g.png" path="/titlebar/"/>
+    <image id="i8bp4" name="titlebar_icon.png" path="/titlebar/"/>
+    <image id="i8bp5" name="titlebar_box_light_g.png" path="/titlebar/"/>
+    <image id="i8bp6" name="titlebar_box_g.png" path="/titlebar/"/>
+    <component id="i8bp7" name="titlebar_box.xml" path="/titlebar/"/>
+    <image id="i8bp8" name="titlebar2.png" path="/titlebar/"/>
+    <image id="i8bp9" name="tab2.png" path="/tab/" scale="9grid" scale9grid="12,60,24,120"/>
+    <image id="i8bpa" name="tab_access.png" path="/tab/"/>
+    <image id="i8bpb" name="tab_gg.png" path="/tab/" scale="9grid" scale9grid="12,60,24,120"/>
+    <image id="i8bpf" name="tab_arrow.png" path="/tab/"/>
+    <image id="i8bpg" name="text1.png" path="/tab/"/>
+    <image id="i8bph" name="text3.png" path="/tab/"/>
+    <image id="i8bpi" name="text2.png" path="/tab/"/>
+    <image id="i8bpk" name="weapon_10.png" path="/weapon/"/>
+    <image id="i8bpl" name="weapon_09.png" path="/weapon/"/>
+    <image id="i8bpm" name="weapon_08.png" path="/weapon/"/>
+    <image id="i8bpn" name="weapon_07.png" path="/weapon/"/>
+    <image id="i8bpo" name="weapon_06.png" path="/weapon/"/>
+    <image id="i8bpp" name="weapon_05.png" path="/weapon/"/>
+    <image id="i8bpq" name="weapon_04.png" path="/weapon/"/>
+    <image id="i8bpr" name="weapon_03.png" path="/weapon/"/>
+    <image id="i8bps" name="weapon_02.png" path="/weapon/"/>
+    <image id="i8bpt" name="weapon_01.png" path="/weapon/"/>
+    <image id="i8bpv" name="inventory_item3.png" path="/item/"/>
+    <image id="i8bpw" name="inventory_item2.png" path="/item/"/>
+    <image id="i8bpx" name="inventory_item1.png" path="/item/"/>
+    <image id="i8bpy" name="equipped_gg.png" path="/item/"/>
+    <image id="i8bpz" name="heading_g.png" path="/heading/" scale="9grid" scale9grid="31,12,184,24"/>
+    <component id="i8bp10" name="heading.xml" path="/heading/"/>
+    <component id="i8bp12" name="inventory_item.xml" path="/item/"/>
+    <component id="i8bp13" name="equipped.xml" path="/item/"/>
+    <image id="i8bp14" name="weapons_panel2.png" path="/others/"/>
+    <image id="i8bp15" name="weapons_panel1_g.png" path="/others/"/>
+    <image id="i8bp16" name="info_arrow_g.png" path="/titlebar/"/>
+    <image id="i8bp17" name="xbox360_b.png" path="/others/"/>
+    <image id="i8bp18" name="xbox360_a.png" path="/others/"/>
+    <component id="i8bp19" name="action_button.xml" path="/others/"/>
+    <image id="i8bp1a" name="info_cpc_g.png" path="/others/"/>
+    <image id="i8bp1c" name="bg_optic3.png" path="/bg/"/>
+    <image id="i8bp1d" name="bg_optic2.png" path="/bg/"/>
+    <image id="i8bp1e" name="bg_optic1.png" path="/bg/"/>
+    <image id="i8bp1f" name="bg_edge2.png" path="/bg/"/>
+    <image id="i8bp1g" name="bg_edge1.png" path="/bg/"/>
+    <component id="i8bp1h" name="bg.xml" path="/bg/"/>
+    <image id="i8bp1i" name="bg_optic4.png" path="/bg/"/>
+    <image id="i8bp1k" name="cpc.png" path="/bg/"/>
+    <image id="i8bp1l" name="overlay_scanlines.png" path="/bg/"/>
+    <image id="i8bp1m" name="overlay_dark.png" path="/bg/"/>
+    <image id="i8bp1p" name="left_line_g.png" path="/left/"/>
+    <image id="i8bp1q" name="left_arrow3a.png" path="/left/"/>
+    <image id="i8bp1r" name="left_arrow2a.png" path="/left/"/>
+    <image id="i8bp1s" name="left_arrow1a.png" path="/left/"/>
+    <component id="9ejs1t" name="left.xml" path="/left/"/>
+    <component id="9ejs1u" name="Component1.xml" path="/others/"/>
+    <component id="gqel1v" name="titlebar.xml" path="/titlebar/"/>
+    <component id="gqel1w" name="tab.xml" path="/tab/"/>
+  </resources>
+  <publish name="3DInventory"/>
+</packageDescription>

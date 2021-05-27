@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="960,680" designImageOffsetX="-175" designImageOffsetY="-112">
+  <displayList>
+    <image id="n11" name="n11" src="i8bp1m" xy="-23,-32"/>
+    <image id="n14" name="n14" src="i8bp1l" xy="0,0" size="960,680"/>
+    <image id="n6" name="n6" src="i8bp1e" xy="146,19" pivot="0.5,0.5" size="634,634" aspect="true"/>
+    <image id="n7" name="n7" src="i8bp1d" xy="194,61" pivot="0.5,0.5" size="553,552" aspect="true"/>
+    <image id="n8" name="n8" src="i8bp1c" xy="206,77" pivot="0.5,0.5" size="521,521" aspect="true"/>
+    <image id="n9" name="n9" src="i8bp1i" xy="232,104" pivot="0.5,0.5" size="470,470" aspect="true"/>
+    <image id="n10" name="n10" src="i8bp1k" xy="256,261" pivot="0.5,0.5" size="408,155"/>
+    <image id="n0" name="n0" src="i8bp1g" xy="81,131" group="n15"/>
+    <image id="n1" name="n1" src="i8bp1f" xy="81,266" group="n15"/>
+    <image id="n2" name="n2" src="i8bp1g" xy="81,404" group="n15" flip="vt"/>
+    <group id="n15" name="n15" xy="81,131" size="140,415" advanced="true"/>
+    <image id="n3" name="n3" src="i8bp1g" xy="708,131" group="n16" flip="hz"/>
+    <image id="n4" name="n4" src="i8bp1f" xy="772,266" group="n16" flip="hz"/>
+    <image id="n5" name="n5" src="i8bp1g" xy="708,404" group="n16" flip="both"/>
+    <group id="n16" name="n16" xy="708,131" size="140,415" advanced="true"/>
+  </displayList>
+  <transition name="rotate" autoPlay="true" autoPlayRepeat="-1">
+    <item time="0" type="Rotation" target="n9" tween="true" startValue="360" endValue="0" duration="480" ease="Linear"/>
+    <item time="0" type="Rotation" target="n6" tween="true" startValue="0" endValue="360" duration="480" ease="Linear"/>
+    <item time="0" type="Rotation" target="n8" tween="true" startValue="360" endValue="0" duration="480" ease="Linear"/>
+    <item time="0" type="Rotation" target="n7" tween="true" startValue="0" endValue="360" duration="480" ease="Linear"/>
+  </transition>
+  <transition name="show">
+    <item time="0" type="Alpha" target="n14" tween="true" startValue="0" endValue="1" duration="33" ease="Linear"/>
+    <item time="0" type="Alpha" target="n15" value="0"/>
+    <item time="0" type="Alpha" target="n10" tween="true" startValue="0" endValue="1" duration="15" ease="Linear"/>
+    <item time="0" type="Alpha" target="n6" value="0"/>
+    <item time="0" type="Alpha" target="n11" tween="true" startValue="0" endValue="1" duration="33" ease="Linear"/>
+    <item time="0" type="Alpha" target="n8" value="0"/>
+    <item time="0" type="Alpha" target="n7" value="0"/>
+    <item time="0" type="Alpha" target="n16" value="0"/>
+    <item time="0" type="Alpha" target="n9" value="0"/>
+    <item time="0" type="Size" target="n10" tween="true" startValue="18,-" endValue="408,-" duration="15" ease="Linear"/>
+    <item time="15" type="Alpha" target="n7" tween="true" startValue="0" endValue="1" duration="18" ease="Linear"/>
+    <item time="15" type="Alpha" target="n8" tween="true" startValue="0" endValue="1" duration="18" ease="Linear"/>
+    <item time="15" type="Alpha" target="n6" tween="true" startValue="0" endValue="1" duration="14"/>
+    <item time="15" type="Alpha" target="n15" tween="true" startValue="0" endValue="1" duration="18" ease="Linear"/>
+    <item time="15" type="Alpha" target="n9" tween="true" startValue="0" endValue="1" duration="18" ease="Linear"/>
+    <item time="15" type="Alpha" target="n16" tween="true" startValue="0" endValue="1" duration="18" ease="Linear"/>
+    <item time="15" type="Scale" target="n10" value="1,1"/>
+    <item time="15" type="Size" target="n7" tween="true" startValue="294,293.47" endValue="553,552" duration="18" ease="Linear"/>
+    <item time="15" type="Size" target="n9" tween="true" startValue="645,645" endValue="470,470" duration="18" ease="Linear"/>
+    <item time="15" type="Size" target="n6" tween="true" startValue="210,210" endValue="634,634" duration="14" ease="Linear"/>
+    <item time="15" type="Size" target="n8" tween="true" startValue="382,382" endValue="521,521" duration="18" ease="Linear"/>
+    <item time="15" type="XY" target="n16" tween="true" startValue="985,-" endValue="708,131" duration="18" ease="Linear"/>
+    <item time="15" type="XY" target="n15" tween="true" startValue="-156,-" endValue="81,131" duration="18" ease="Linear"/>
+    <item time="33" type="Scale" target="n10" value="1,1"/>
+  </transition>
+</component>

@@ -25,6 +25,7 @@ function eventHandlerFactory(type) {
         event.timeStamp = rawEvent.timeStamp
 
         document.dispatchEvent(event)
+        window.dispatchEvent(event)
     }
 }
 

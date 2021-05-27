@@ -1,6 +1,6 @@
-import * as _window from './window'
-import document from './document'
 
+import document from './document'
+import * as _window from './window'
 const global = GameGlobal
 
 GameGlobal.global = GameGlobal.global || global
@@ -15,7 +15,7 @@ function inject() {
         _window.document.removeEventListener(type, listener)
     }
     _window.dispatchEvent = function(event = {}) {
-        console.log('window.dispatchEvent', event.type, event);
+        // console.log('window.dispatchEvent', event.type, event);
         // nothing to do
     }
 

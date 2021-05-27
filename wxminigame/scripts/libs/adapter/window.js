@@ -1,4 +1,4 @@
-import Canvas from './Canvas'
+
 
 import CommonComputedStyle from './style/CommonComputedStyle'
 import getImageComputedStyle from './style/ImageComputedStyle'
@@ -28,7 +28,7 @@ export { default as TextDecoder } from './TextDecoder'
 export { btoa, atob } from './Base64.js'
 export { default as Symbol } from './Symbol'
 export * from './WindowProperties'
-
+import Canvas from './Canvas'
 const { platform } = wx.getSystemInfoSync()
 
 // 暴露全局的 canvas

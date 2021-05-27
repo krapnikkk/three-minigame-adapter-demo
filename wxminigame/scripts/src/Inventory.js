@@ -12,13 +12,6 @@ export default class Inventory {
         this.renderer.localClippingEnabled = true;
         this.renderer.autoClear = false;
 
-        // document.body.appendChild(this.renderer.domElement);
-        // window.addEventListener('resize', () => {
-        //     this.renderer.setSize(window.innerWidth, window.innerHeight);
-        //     this.camera.aspect = window.innerWidth / window.innerHeight;
-        //     this.camera.updateProjectionMatrix();
-        // }, false);
-
         this.scene = new THREE.Scene();
 
         fgui.Stage.init(this.renderer);

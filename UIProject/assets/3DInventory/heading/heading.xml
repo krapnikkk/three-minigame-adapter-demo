@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="230,46" overflow="hidden" extention="Label">
+  <displayList>
+    <image id="n15" name="n15" src="i8bpz" xy="0,0" blend="add">
+      <relation target="" sidePair="width-width"/>
+    </image>
+    <text id="n16" name="title" xy="23,14" size="201,25" fontSize="18" color="#bfa38f" autoSize="height" text="WEAPONS"/>
+  </displayList>
+</component>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="911,54" overflow="hidden">
+  <displayList>
+    <image id="n0" name="n0" src="i8bp3" xy="0,0"/>
+    <image id="n3" name="n3" src="i8bp4" xy="33,5"/>
+    <image id="n10" name="n10" src="i8bp8" xy="713,0"/>
+    <component id="n7" name="n7" src="i8bp7" xy="643,5">
+      <Button title="CD"/>
+    </component>
+    <component id="n8" name="n8" src="i8bp7" xy="693,5">
+      <Button title="DM"/>
+    </component>
+    <component id="n9" name="n9" src="i8bp7" xy="669,5">
+      <Button title="VR"/>
+    </component>
+    <text id="n1" name="n1" xy="76,13" size="173,31" blend="add" fontSize="24" color="#bfa38f" autoSize="height" text="INVENTORY"/>
+  </displayList>
+  <transition name="show">
+    <item time="0" type="Size" tween="true" startValue="0,-" endValue="911,-" duration="18" ease="Linear"/>
+    <item time="9" type="XY" target="n7" tween="true" startValue="-,58" endValue="643,5" duration="13" ease="Back.Out"/>
+    <item time="9" type="XY" target="n8" tween="true" startValue="-,165" endValue="693,5" duration="13" ease="Back.Out"/>
+    <item time="9" type="XY" target="n9" tween="true" startValue="-,106" endValue="669,5" duration="13" ease="Back.Out"/>
+  </transition>
+</component>

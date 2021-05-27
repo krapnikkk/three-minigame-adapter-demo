@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="47,686" pivot="0.5,0.5" overflow="hidden">
+  <displayList>
+    <image id="n69" name="n69" src="i8bp1p" xy="0,0">
+      <relation target="" sidePair="middle-middle"/>
+    </image>
+    <image id="n70" name="n70" src="i8bp1s" xy="13,46"/>
+    <image id="n71" name="n71" src="i8bp1r" xy="13,277"/>
+    <image id="n72" name="n72" src="i8bp1q" xy="13,510"/>
+  </displayList>
+  <transition name="show">
+    <item time="0" type="Alpha" target="n72" value="0"/>
+    <item time="0" type="Alpha" target="n70" value="0"/>
+    <item time="0" type="Alpha" target="n71" value="0"/>
+    <item time="0" type="Size" tween="true" startValue="-,1" endValue="47,686" duration="18" ease="Linear"/>
+    <item time="18" type="Alpha" target="n70" tween="true" startValue="0" endValue="1" duration="13" ease="Linear"/>
+    <item time="18" type="XY" target="n70" tween="true" startValue="-,695" endValue="13,46" duration="13"/>
+    <item time="29" type="Alpha" target="n71" tween="true" startValue="0" endValue="1" duration="9" ease="Linear"/>
+    <item time="29" type="XY" target="n71" tween="true" startValue="-,736" endValue="13,277" duration="9"/>
+    <item time="36" type="Alpha" target="n72" tween="true" startValue="0" endValue="0.99" duration="6" ease="Linear"/>
+    <item time="36" type="XY" target="n72" tween="true" startValue="-,772" endValue="13,510" duration="6"/>
+  </transition>
+</component>

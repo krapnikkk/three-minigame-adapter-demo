@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="120,29" extention="Button">
+  <displayList>
+    <text id="n60" name="title" xy="31,2" size="86,25" fontSize="18" color="#bfa38f" autoSize="none" singleLine="true" text="ACCEPT"/>
+    <loader id="n62" name="icon" xy="0,0" size="29,29" url="ui://572fdiqli8bp18"/>
+  </displayList>
+  <Button downEffect="dark" downEffectValue="0.80"/>
+</component>
