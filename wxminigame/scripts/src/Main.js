@@ -13,6 +13,8 @@ import HitTestDemo from "./HitTestDemo.js";
 import ChatDemo from "./ChatDemo.js";
 import ScrollPaneDemo from "./ScrollPaneDemo.js";
 import TreeViewDemo from "./TreeViewDemo.js";
+import Inventory from "./Inventory.js";
+
 
 export default class Main {
 
@@ -92,6 +94,9 @@ export default class Main {
         }, this);
         this._mainMenu.getChild("n16").onClick(() => {
             this.startDemo(CooldownDemo);
+        }, this);
+        this._mainMenu.getChild("n17").onClick(() => {
+            this.startDemo(Inventory);
         }, this);
 
         this.showMainMenu();

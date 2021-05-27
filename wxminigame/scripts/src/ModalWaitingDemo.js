@@ -1,10 +1,10 @@
-
+import {TestWin } from "./TestWin.js"
 export default class ModalWaitingDemo {
     constructor() {
         fgui.UIConfig.globalModalWaiting = "ui://ModalWaiting/GlobalModalWaiting";
         fgui.UIConfig.windowModalWaiting = "ui://ModalWaiting/WindowModalWaiting";
 
-        fgui.UIPackage.loadPackage("https://krapnik.cn/three-minigame-adapterModalWaiting").then(this.onUILoaded.bind(this));
+        fgui.UIPackage.loadPackage("https://krapnik.cn/three-minigame-adapter/ModalWaiting").then(this.onUILoaded.bind(this));
     }
 
     onUILoaded() {
