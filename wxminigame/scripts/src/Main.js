@@ -24,7 +24,8 @@ export default class Main {
     }
 
     init() {
-        this.renderer = new THREE.WebGLRenderer({antialias: true,canvas});
+        const info = wx.getSystemInfoSync();
+        this.renderer = info.system.includes("iOS") ? new THREE.WebGL1Renderer({antialias: true,canvas}) : new THREE.WebGLRenderer({antialias: true,canvas});
         this.renderer.setClearColor(0X222222);
         this.renderer.sortObjects = false;
         this.renderer.setPixelRatio(window.devicePixelRatio);
