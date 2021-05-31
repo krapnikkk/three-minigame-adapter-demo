@@ -1,19 +1,20 @@
-import BasicDemo from "./BasicDemo.js";
-import TransitionDemo from "./TransitionDemo.js";
-import VirtualListDemo from "./VirtualListDemo.js";
-import LoopListDemo from "./LoopListDemo.js";
-import PullToRefreshDemo from "./PullToRefreshDemo.js";
-import ModalWaitingDemo from "./ModalWaitingDemo.js";
-import JoystickDemo from "./JoystickDemo.js";
-import BagDemo from "./BagDemo.js";
-import ListEffectDemo from "./ListEffectDemo.js";
-import GuideDemo from "./GuideDemo.js";
-import CooldownDemo from "./CooldownDemo.js";
-import HitTestDemo from "./HitTestDemo.js";
-import ChatDemo from "./ChatDemo.js";
-import ScrollPaneDemo from "./ScrollPaneDemo.js";
-import TreeViewDemo from "./TreeViewDemo.js";
-import Inventory from "./Inventory.js";
+import BasicDemo from "./userInterfaces/BasicDemo.js";
+import TransitionDemo from "./userInterfaces/TransitionDemo.js";
+import VirtualListDemo from "./userInterfaces/VirtualListDemo.js";
+import LoopListDemo from "./userInterfaces/LoopListDemo.js";
+import PullToRefreshDemo from "./userInterfaces/PullToRefreshDemo.js";
+import ModalWaitingDemo from "./userInterfaces/ModalWaitingDemo.js";
+import JoystickDemo from "./userInterfaces/JoystickDemo.js";
+import BagDemo from "./userInterfaces/BagDemo.js";
+import ListEffectDemo from "./userInterfaces/ListEffectDemo.js";
+import GuideDemo from "./userInterfaces/GuideDemo.js";
+import CooldownDemo from "./userInterfaces/CooldownDemo.js";
+import HitTestDemo from "./userInterfaces/HitTestDemo.js";
+import ChatDemo from "./userInterfaces/ChatDemo.js";
+import ScrollPaneDemo from "./userInterfaces/ScrollPaneDemo.js";
+import TreeViewDemo from "./userInterfaces/TreeViewDemo.js";
+import Inventory from "./userInterfaces/Inventory.js";
+import AnimationDemo from "./examples/webgl_animation_cloth.js"
 
 
 export default class Main {
@@ -25,15 +26,17 @@ export default class Main {
 
     init() {
         const info = wx.getSystemInfoSync();
-        this.renderer = info.system.includes("iOS") ? new THREE.WebGL1Renderer({antialias: true,canvas}) : new THREE.WebGLRenderer({antialias: true,canvas});
+        this.renderer = info.system.includes("iOS") ? new THREE.WebGL1Renderer({ antialias: true, canvas }) : new THREE.WebGLRenderer({ antialias: true, canvas });
         this.renderer.setClearColor(0X222222);
         this.renderer.sortObjects = false;
         this.renderer.setPixelRatio(window.devicePixelRatio);
         this.renderer.setSize(window.innerWidth, window.innerHeight);
         this.renderer.localClippingEnabled = true;
+        this.renderer.autoClear = false;
+        this.renderer.shadowMap.enabled = true;
+        window.renderer = this.renderer;
 
         this.scene = new THREE.Scene();
-
         fgui.Stage.init(this.renderer, { screenMode: "horizontal" });
         fgui.Stage.scene = this.scene;
         // fgui.UIConfig.packageFileExtension = "bin";
@@ -99,8 +102,12 @@ export default class Main {
         this._mainMenu.getChild("n17").onClick(() => {
             this.startDemo(Inventory);
         }, this);
+        this._mainMenu.getChild("n23").onClick(() => {
+            this.startDemo(AnimationDemo);
+        }, this);
 
         this.showMainMenu();
+
     }
 
     showMainMenu() {
@@ -131,7 +138,13 @@ export default class Main {
 
     render() {
         fgui.Stage.update();
-        this.renderer.render(this.scene, fgui.Stage.camera);
+
+        if(this._currentDemo&&this._currentDemo.scene&&this._currentDemo.camera){
+            this._currentDemo.animate();
+            this.renderer.clear();
+            this.renderer.render(this._currentDemo.scene, this._currentDemo.camera);
+        }
+        this.renderer.render(fgui.Stage.scene, fgui.Stage.camera);
     }
 
     animate = () => {
