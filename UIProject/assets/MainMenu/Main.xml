@@ -17,7 +17,7 @@
     <group id="n22_jluc" name="label" xy="388,28" size="360,44" advanced="true">
       <relation target="" sidePair="center-center,middle-middle"/>
     </group>
-    <component id="n1_rftu" name="n1" src="rftu4" fileName="Button.xml" xy="104,115" size="235,51" group="n19_jluc">
+    <component id="n1_rftu" name="n1" src="rftu4" fileName="Button.xml" xy="105,117" size="235,51" group="n19_jluc">
       <Button title="基础功能展示"/>
     </component>
     <component id="n2_rftu" name="n2" src="rftu4" fileName="Button.xml" xy="104,186" size="235,51" group="n19_jluc">
@@ -67,7 +67,12 @@
     </component>
     <group id="n19_jluc" name="ui" xy="104,115" size="927,406" advanced="true">
       <gearDisplay controller="c1" pages="0"/>
-      <gearSize controller="c1" default="927,406,1,1" tween="true"/>
+    </group>
+    <component id="n23_fc51" name="n23" src="rftu4" fileName="Button.xml" xy="105,117" size="235,51" group="n24_fc51">
+      <Button title="衣服动画"/>
+    </component>
+    <group id="n24_fc51" name="Basic" xy="105,117" size="235,51" advanced="true">
+      <gearDisplay controller="c1" pages="1"/>
     </group>
   </displayList>
 </component>
