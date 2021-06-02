@@ -71,7 +71,10 @@
     <component id="n23_fc51" name="n23" src="rftu4" fileName="Button.xml" xy="105,117" size="235,51" group="n24_fc51">
       <Button title="衣服动画"/>
     </component>
-    <group id="n24_fc51" name="Basic" xy="105,117" size="235,51" advanced="true">
+    <component id="n25_m0y0" name="n24" src="rftu4" fileName="Button.xml" xy="104,186" size="235,51" group="n24_fc51">
+      <Button title="骨骼动画【gltf】" controller="c1" page="1"/>
+    </component>
+    <group id="n24_fc51" name="Basic" xy="104,117" size="236,120" advanced="true">
       <gearDisplay controller="c1" pages="1"/>
     </group>
   </displayList>

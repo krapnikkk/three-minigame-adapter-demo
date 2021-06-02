@@ -14,7 +14,9 @@ import ChatDemo from "./userInterfaces/ChatDemo.js";
 import ScrollPaneDemo from "./userInterfaces/ScrollPaneDemo.js";
 import TreeViewDemo from "./userInterfaces/TreeViewDemo.js";
 import Inventory from "./userInterfaces/Inventory.js";
-import AnimationDemo from "./examples/webgl_animation_cloth.js"
+
+import ClothDemo from "./examples/animation_cloth.js"
+import SkinningDemo from "./examples/animation_skinning_blending.js"
 
 
 export default class Main {
@@ -103,7 +105,10 @@ export default class Main {
             this.startDemo(Inventory);
         }, this);
         this._mainMenu.getChild("n23").onClick(() => {
-            this.startDemo(AnimationDemo);
+            this.startDemo(ClothDemo);
+        }, this);
+        this._mainMenu.getChild("n24").onClick(() => {
+            this.startDemo(SkinningDemo);
         }, this);
 
         this.showMainMenu();

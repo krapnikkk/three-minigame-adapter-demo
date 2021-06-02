@@ -544,7 +544,7 @@ function dispose() {
     camera = null;
 }
 
-export default class AnimationDemo {
+export default class ClothDemo {
     constructor() {
         init();
         this.scene = scene;
