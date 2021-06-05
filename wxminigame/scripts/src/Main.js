@@ -17,6 +17,9 @@ import Inventory from "./userInterfaces/Inventory.js";
 
 import ClothDemo from "./examples/animation_cloth.js"
 import SkinningDemo from "./examples/animation_skinning_blending.js"
+import RayCastDemo from "./examples/instancing_raycast.js"
+import FBXLoaderDemo from "./examples/loader_fbx.js"
+
 
 
 export default class Main {
@@ -109,6 +112,12 @@ export default class Main {
         }, this);
         this._mainMenu.getChild("n24").onClick(() => {
             this.startDemo(SkinningDemo);
+        }, this);
+        this._mainMenu.getChild("n25").onClick(() => {
+            this.startDemo(FBXLoaderDemo);
+        }, this);
+        this._mainMenu.getChild("n26").onClick(() => {
+            this.startDemo(RayCastDemo);
         }, this);
 
         this.showMainMenu();
